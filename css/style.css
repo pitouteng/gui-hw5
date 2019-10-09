@@ -1,0 +1,177 @@
+/* name: pitou teng
+email: pitou_teng@student.uml.edu
+http://weblab.cs.uml.edu/~pteng/hw4/index.html */
+
+body{
+  padding: 0;
+  margin: 0;
+  font-family: monospace;
+  /* remove extra space on the right when media query triggers */
+  width:100%;
+  height:100%;
+  overflow-x:hidden;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  /* remove overflow outside of the nav bar*/
+  overflow: hidden;
+}
+/* set the nav to the right */
+nav li{
+  float: right;
+}
+/* give each nav padding */
+nav li a{
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+}
+/* link is black when hover on */
+a:hover{
+  color: black;
+}
+a:visited{
+  color: blue;
+}
+
+
+/* rule for just pitouTM "WEBSITE" */
+.info h1{
+  padding: 10px 10px 10px 0;
+  text-align: left;
+}
+
+/* smaller superscript font */
+sup{
+  font-size: 50%;
+}
+
+/* align other h1 to the center */
+h1{
+  margin-top: 0;
+  text-align: center;
+}
+
+/* no bullet for all unordered list */
+ul{
+  list-style-type: none;
+}
+
+
+/* image is to the left half of the whole page */
+.info img{
+  padding: 5%;
+  width: 40%;
+}
+
+/* the text that goes with the portrait goes to the right of image */
+.infoText{
+  float: right;
+  width: 50%;
+  /* vertical center */
+  padding-top: 25%;
+}
+
+#interest h1{
+  text-align: left;
+}
+#interest{
+  border-top: 1px solid blue;
+  padding: 200px 0 200px 0;
+}
+
+/* set fixed width for interestText and center it */
+.interestText{
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+#work{
+  background-color: yellow;
+}
+
+/* text of the assignment is to the left of the github pic */
+.assignment{
+  padding: 15% 10% 0 10%;
+  float: left;
+  width: 30%;
+}
+/* the total block for github image is 50% */
+#work img{
+  margin: 15%;
+  width: 20%;
+}
+
+/* give some space to list */
+.infoText ul li,
+.assignment ul li{
+  padding: 10px;
+}
+
+#getInTouch{
+    margin: 200px 0 200px 0;
+}
+
+form{
+  padding: 0 20% 0 20%;
+}
+
+input[type=text]{
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid blue;
+  padding: 15px;
+  margin: 5px 5px 5px 0;
+}
+
+/* give the message block the biggest space */
+input[name=message]{
+  height: 100px;
+}
+
+footer{
+  background-color: yellow;
+  padding: 100px 0 100px 0;
+  text-align: center;
+}
+
+/* move stuff around when browser width 700 or less */
+@media only screen and (max-width: 700px)
+   {
+     body{
+     width:100%;
+     overflow-x:hidden;
+     }
+     /* move the infoText to below the portrait image
+        and remove resize padding/width */
+     .infoText{
+       float: none;
+       width: 100%;
+       padding: 15% 10% 25% 10%;
+     }
+     /* img now take the full space of browser width */
+    .info img{
+      padding: 10%;
+      width: 80%;
+    }
+    /* resize pdding of interest text block */
+    #interest{
+      padding: 200px 10% 200px 10%;
+    }
+    /* move the assignment block blow github image
+       and add blue line in between*/
+    .assignment{
+      border-top: 1px solid blue;
+      padding: 30% 0 30% 0;
+      float: none;
+      width: 100%;
+    }
+    /* resize github margin and width so it uses 100% of broswer width */
+    #work img{
+      margin: 30%;
+      width: 40%;
+    }
+}

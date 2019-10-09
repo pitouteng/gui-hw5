@@ -1,0 +1,93 @@
+<!--
+Pitou Teng
+pitou_teng@student.uml.edu
+UMass Lowell Compputer Science, GUI Programming I, Fall2019
+Sept 17, 2019
+creating a first webpage with info about me
+-->
+
+<!DOCTYPE html>
+ <html lang="en">
+  <head>
+   <meta charset="utf-8">
+   <title>Pitou Teng</title>
+   <link rel="stylesheet" href="css/style.css">
+   <!-- <script src="script.js"></script> -->
+   <!-- make the pixel on mobile scale correctly -->
+   <meta id="viewport" name="viewport" content ="width=device-width" />
+
+  </head>
+  <body>
+    <!-- nav block -->
+   <nav>
+    <ul>
+      <li><a href="#interest">Interest</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#getInTouch">Contact</a></li>
+      <li><a href="index.html">Home</a></li>
+    </ul>
+   </nav>
+   <!-- info -->
+  <div class="info">
+   <img alt="Portrait of Pitou" src="portrait.jpg" >
+   <div class="infoText">
+    <h1>pitou<sup>TM</sup> "WEBSITE"</h1>
+    <h2>about</h2>
+     <ul>
+      <li>student <strong>@</strong> umass lowell </li>
+      <li>co-op <strong>@</strong> ZOLL, MA</li>
+      <li>root <strong>in</strong> cambodia</li>
+     </ul>
+    </div>
+   </div>
+   <!-- interest -->
+     <div id="interest">
+       <div class="interestText">
+        <h1>interest</h1>
+         <dl>
+          <dt>photography</dt>
+          <dd>i love my <del>phone</del><ins>dslr</ins>. it takes photos with beautiful bokeh</dd>
+          <dt>travel</dt>
+          <dd>traveling gives new perspective and leaves memorable experience. i try to make the time and resources
+             to go explore every year</dd>
+          <dt>fitness</dt>
+          <dd>exercise makes me healthier, stronger phyically and mentally</dd>
+         </dl>
+        </div>
+      </div>
+      <!-- links to assignemnt and github -->
+   <div id="work">
+     <a href="https://github.com/pitouteng"> <img alt="Github Logo" src="github.png"> </a>
+    <div class="assignment">
+      <h1>projects</h1>
+      <ul>
+        <li><a href="http://weblab.cs.uml.edu/~pteng/index.html">first web</a></li>
+        <li><a href="../hw3/index.html">css puzzle</a></li>
+        <li><a href="index.html">hw 4 "this"</a></li>
+      </ul>
+      </div>
+    </div>
+    <!-- emailing form -->
+    <!-- id is for scrolling when press contaon on nav bar -->
+    <div id="getInTouch">
+     <h1>get in touch</h1>
+     <form>
+      <input type="text" name="firstname"><br>
+      First name:<br>
+      <input type="text" name="lastname"><br>
+      Last name:<br>
+      <input type="text" name="email"><br>
+      email:<br>
+      <input type="text" name="subject"><br>
+      subject<br>
+      <input type="text" name="message"><br>
+      message:<br>
+      <input type="submit" name="submit">
+     </form>
+    </div>
+   <footer>
+    website by pitou teng
+   </footer>
+
+
+  </body>
